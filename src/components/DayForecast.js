@@ -8,8 +8,10 @@ const DayForecast = ({ forecastData }) => {
 			<div className='panel-body'>
 				<img src={img}></img>
 				<h4 className='desc'>{forecastData.desc}</h4>
-				<h3><span className='text-info'>{forecastData.maxTemp}°</span>
-				<span className='text-muted'> / {forecastData.minTemp}°</span></h3>
+				<h3>
+					<span className='text-info'>{forecastData.maxTemp}°</span>
+					<span className='text-muted'> / {forecastData.minTemp}°</span>
+				</h3>
 				<h4 className='text-primary'>{forecastData.humidity}%</h4>
 			</div>
 		</div>
