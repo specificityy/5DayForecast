@@ -1,0 +1,192 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'surge' ]
+2 info using npm@2.14.12
+3 info using node@v5.4.1
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'surge', null ]
+7 verbose cache add spec surge
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'surge',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'surge',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed surge@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for surge
+11 info addNameTag [ 'surge', 'latest' ]
+12 silly mapToRegistry name surge
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/surge
+16 verbose addNameTag registry:https://registry.npmjs.org/surge not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/surge
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 12:57:21 AM
+20 verbose request id d05e6a3bf00b6725
+21 http request GET https://registry.npmjs.org/surge
+22 http 200 https://registry.npmjs.org/surge
+23 verbose headers { server: 'nginx/1.10.1',
+23 verbose headers   'content-type': 'application/json',
+23 verbose headers   'last-modified': 'Fri, 30 Dec 2016 03:09:30 GMT',
+23 verbose headers   etag: 'W/"5865cfea-cf6f"',
+23 verbose headers   'content-encoding': 'gzip',
+23 verbose headers   'cache-control': 'max-age=300',
+23 verbose headers   'content-length': '5926',
+23 verbose headers   'accept-ranges': 'bytes',
+23 verbose headers   date: 'Sat, 04 Feb 2017 00:57:21 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   age: '0',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-lcy1151-LCY',
+23 verbose headers   'x-cache': 'MISS',
+23 verbose headers   'x-cache-hits': '0',
+23 verbose headers   'x-timer': 'S1486169841.180345,VS0,VE19',
+23 verbose headers   vary: 'Accept-Encoding' }
+24 silly get cb [ 200,
+24 silly get   { server: 'nginx/1.10.1',
+24 silly get     'content-type': 'application/json',
+24 silly get     'last-modified': 'Fri, 30 Dec 2016 03:09:30 GMT',
+24 silly get     etag: 'W/"5865cfea-cf6f"',
+24 silly get     'content-encoding': 'gzip',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     'content-length': '5926',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Sat, 04 Feb 2017 00:57:21 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-lcy1151-LCY',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1486169841.180345,VS0,VE19',
+24 silly get     vary: 'Accept-Encoding' } ]
+25 verbose get saving surge to /Users/jimenezw/.npm/registry.npmjs.org/surge/.cache.json
+26 silly addNameTag next cb for surge with tag latest
+27 silly addNamed surge@0.18.0
+28 verbose addNamed "0.18.0" is a plain semver version for surge
+29 silly mapToRegistry name surge
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/surge
+33 verbose addRemoteTarball https://registry.npmjs.org/surge/-/surge-0.18.0.tgz not in flight; adding
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/surge/-/surge-0.18.0.tgz',
+34 verbose addRemoteTarball   '1c4378c7a5204b96f45eeaf29bfa117a19995ce9' ]
+35 info retry fetch attempt 1 at 12:57:21 AM
+36 info attempt registry request try #1 at 12:57:21 AM
+37 http fetch GET https://registry.npmjs.org/surge/-/surge-0.18.0.tgz
+38 http fetch 200 https://registry.npmjs.org/surge/-/surge-0.18.0.tgz
+39 silly fetchAndShaCheck shasum 1c4378c7a5204b96f45eeaf29bfa117a19995ce9
+40 verbose addTmpTarball /var/folders/_g/c9vkhmdj1bv0qgnr96k5xpg19xj7f_/T/npm-6663-d41a61d2/registry.npmjs.org/surge/-/surge-0.18.0.tgz not in flight; adding
+41 verbose addTmpTarball already have metadata; skipping unpack for surge@0.18.0
+42 silly cache afterAdd surge@0.18.0
+43 verbose afterAdd /Users/jimenezw/.npm/surge/0.18.0/package/package.json not in flight; writing
+44 verbose afterAdd /Users/jimenezw/.npm/surge/0.18.0/package/package.json written
+45 silly install resolved [ { name: 'surge',
+45 silly install resolved     version: '0.18.0',
+45 silly install resolved     description: 'CDN for front-end developers',
+45 silly install resolved     author: { name: 'Brock Whitten', email: 'brock@chloi.io' },
+45 silly install resolved     bin: { surge: './lib/cli.js' },
+45 silly install resolved     dependencies:
+45 silly install resolved      { du: '0.1.0',
+45 silly install resolved        'fstream-ignore': '1.0.2',
+45 silly install resolved        'is-domain': '0.0.1',
+45 silly install resolved        moniker: '0.1.2',
+45 silly install resolved        netrc: '0.1.4',
+45 silly install resolved        prompt: '~0.2.14',
+45 silly install resolved        progress: '1.1.8',
+45 silly install resolved        request: '2.40.0',
+45 silly install resolved        split: '0.3.1',
+45 silly install resolved        'surge-ignore': '0.2.0',
+45 silly install resolved        tar: '1.0.0',
+45 silly install resolved        'tar.gz': '0.1.1',
+45 silly install resolved        'url-parse-as-address': '1.0.0',
+45 silly install resolved        read: '1.0.5',
+45 silly install resolved        minimist: '1.1.1' },
+45 silly install resolved     devDependencies:
+45 silly install resolved      { commander: '2.9.0',
+45 silly install resolved        mocha: '*',
+45 silly install resolved        nixt: '0.4.1',
+45 silly install resolved        should: '7.1.0',
+45 silly install resolved        yargs: '3.30.0' },
+45 silly install resolved     license: 'ISC',
+45 silly install resolved     main: './lib/surge.js',
+45 silly install resolved     ignore: [ 'test' ],
+45 silly install resolved     scripts:
+45 silly install resolved      { test: 'mocha -t 5000',
+45 silly install resolved        'test:local': 'ENDPOINT=\'localhost:5001\' ./node_modules/.bin/mocha' },
+45 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/sintaxi/surge.git' },
+45 silly install resolved     gitHead: '2110dc825bf517b47ca1abc8664a712c174a8630',
+45 silly install resolved     bugs: { url: 'https://github.com/sintaxi/surge/issues' },
+45 silly install resolved     homepage: 'https://github.com/sintaxi/surge#readme',
+45 silly install resolved     _id: 'surge@0.18.0',
+45 silly install resolved     _shasum: '1c4378c7a5204b96f45eeaf29bfa117a19995ce9',
+45 silly install resolved     _from: 'surge@latest',
+45 silly install resolved     _npmVersion: '3.8.2',
+45 silly install resolved     _nodeVersion: '4.4.0',
+45 silly install resolved     _npmUser: { name: 'sintaxi', email: 'brock@sintaxi.com' },
+45 silly install resolved     dist:
+45 silly install resolved      { shasum: '1c4378c7a5204b96f45eeaf29bfa117a19995ce9',
+45 silly install resolved        tarball: 'https://registry.npmjs.org/surge/-/surge-0.18.0.tgz' },
+45 silly install resolved     maintainers: [ [Object], [Object] ],
+45 silly install resolved     _npmOperationalInternal:
+45 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+45 silly install resolved        tmp: 'tmp/surge-0.18.0.tgz_1462359848149_0.8497565619181842' },
+45 silly install resolved     directories: {},
+45 silly install resolved     _resolved: 'https://registry.npmjs.org/surge/-/surge-0.18.0.tgz' } ]
+46 info install surge@0.18.0 into /usr/local/lib
+47 info installOne surge@0.18.0
+48 verbose installOne of surge to /usr/local/lib not in flight; installing
+49 verbose lock using /Users/jimenezw/.npm/_locks/surge-9264acc302f55897.lock for /usr/local/lib/node_modules/surge
+50 silly install write writing surge 0.18.0 to /usr/local/lib/node_modules/surge
+51 verbose unbuild lib/node_modules/surge
+52 silly gentlyRm /usr/local/lib/node_modules/surge is being purged from base /usr/local
+53 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/surge
+54 verbose tar unpack /Users/jimenezw/.npm/surge/0.18.0/package.tgz
+55 verbose tar unpacking to /usr/local/lib/node_modules/surge
+56 silly gentlyRm /usr/local/lib/node_modules/surge is being purged
+57 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/surge
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 error tar.unpack untar error /Users/jimenezw/.npm/surge/0.18.0/package.tgz
+60 verbose unlock done using /Users/jimenezw/.npm/_locks/surge-9264acc302f55897.lock for /usr/local/lib/node_modules/surge
+61 verbose fstream_path /usr/local/lib/node_modules/surge
+62 verbose fstream_type Directory
+63 verbose fstream_class DirWriter
+64 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/surge'
+64 verbose stack     at Error (native)
+65 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+65 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+65 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+66 verbose cwd /Users/jimenezw/Desktop/projects/5DayForecast
+67 error Darwin 15.6.0
+68 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "surge"
+69 error node v5.4.1
+70 error npm  v2.14.12
+71 error path /usr/local/lib/node_modules/surge
+72 error code EACCES
+73 error errno -13
+74 error syscall mkdir
+75 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/surge'
+75 error     at Error (native)
+75 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/surge']
+75 error   errno: -13,
+75 error   code: 'EACCES',
+75 error   syscall: 'mkdir',
+75 error   path: '/usr/local/lib/node_modules/surge',
+75 error   fstream_type: 'Directory',
+75 error   fstream_path: '/usr/local/lib/node_modules/surge',
+75 error   fstream_class: 'DirWriter',
+75 error   fstream_stack:
+75 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+75 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+75 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+76 error Please try running this command again as root/Administrator.
+77 verbose exit [ -13, true ]
+78 verbose unbuild lib/node_modules/surge
+79 silly gentlyRm /usr/local/lib/node_modules/surge is being purged from base /usr/local
+80 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/surge
