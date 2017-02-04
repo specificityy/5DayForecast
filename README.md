@@ -2,7 +2,7 @@
 
 ## Simple React + Redux App using the [OpenWeatherMap API](http://openweathermap.org/forecast5)
 
-### Live demo [Here](https://wilsonjs.github.io/5DayForecast/)
+### Live demo [Here](http://fivedayforecast.surge.sh/)
 
 ### How it works?
 
