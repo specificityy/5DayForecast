@@ -2,7 +2,7 @@
 
 ## Simple React + Redux App using the [OpenWeatherMap API](http://openweathermap.org/forecast5)
 
-### Live demo [Here](https://wilsonjs.github.io/5DayForecast/)
+### Live demo [Here](http://fivedayforecast.surge.sh/)
 
 ### How it works?
 
@@ -26,7 +26,8 @@ Once the code is downloaded, go to the folder and run:
 2. Axios (for http requests)
 3. Babel (ES6/7 transpiler)
 4. Lodash (helper functions)
-5. Tape, Enzyme and Sinon (unit testing)
+5. Twitter's Bootstrap (some css styling)
+6. Tape, Enzyme and Sinon (unit testing)
 
 ### What could be done with more time?
 
