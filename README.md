@@ -33,12 +33,12 @@ Once the code is downloaded, go to the folder and run:
 
 This was a simple project that didn't take more than a couple of hours and there's a lot of room for improvement, with enough time, way more could be accomplished like:
 
-* Adding routing so the cities you look for remain the browser history.
+* Adding routing so the cities you look for remain in the browser history.
 * Having the app figure out your location and display that forecast first.
-* The API retrieves forcast for every 3 hours of each day, currently the app displays an average of the whole day, we could add a driil down report so you could see the variations through out the day instead of the overall values.
+* The API retrieves forcast for every 3 hours of each day, currently the app displays an average of the whole day, we could add a driil down report so you could see the variations through out the day instead of just the overall values.
   * Display more data than just the max, min, humidity; things like wind speed or atmospheric pressure.
-  * Maybe display the extra data on-hover.
-  * Let you have a couple of locations saved.
+  * Maybe display the extra data on a small tooltip windown on-hover.
+  * Let you save locations.
 * Improve the styling
   * Add a bit of transition animations.
   * Add a loading spinner in between round trips to the server.
