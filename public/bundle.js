@@ -40647,7 +40647,7 @@ var fetchFail = exports.fetchFail = function fetchFail(err) {
 
 var fetchData = exports.fetchData = function fetchData(query) {
   return function (dispatch) {
-    return _axios2.default.get('https://api.openweathermap.org/data/2.5/forecast?q=' + query + '&mode=json&units=metric&appid=8da603b236dde573722ae04b5a16447b').then(function (json) {
+    return _axios2.default.get('http://api.openweathermap.org/data/2.5/forecast?q=' + query + '&mode=json&units=metric&appid=8da603b236dde573722ae04b5a16447b').then(function (json) {
       dispatch(fetchSuccess(json.data.list)), dispatch(setCity(json.data.city.name + ', ' + json.data.city.country));
     }).catch(function (err) {
       return dispatch(fetchFail(err));
