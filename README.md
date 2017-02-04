@@ -2,6 +2,8 @@
 
 ## Simple React + Redux App using the [OpenWeatherMap API](http://openweathermap.org/forecast5)
 
+### Live demo [Here](https://wilsonjs.github.io/5DayForecast/)
+
 ### How it works?
 
 When opening the app you'll get the weahter forecast for the next 5 days, the default city is Edinburgh.
