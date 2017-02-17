@@ -6,7 +6,7 @@ const mapStateToProps = ({ forecast }) => ({
 	forecast
 });
 
-const DayForecastList = ({ forecast }) => {
+export const DayForecastList = ({ forecast }) => {
 	return (<div className='container'>
 		<div className='row'>
 			{forecast.map((item, i) => <DayForecast forecastData={item} key={i} />)}

@@ -9,8 +9,8 @@ const DayForecast = ({ forecastData }) => {
 				<img src={img}></img>
 				<h4 className='desc'>{forecastData.desc}</h4>
 				<h3>
-					<span className='text-info'>{forecastData.maxTemp}°</span>
-					<span className='text-muted'> / {forecastData.minTemp}°</span>
+					<span className='text-info'>{forecastData.temp_max}°</span>
+					<span className='text-muted'> / {forecastData.temp_min}°</span>
 				</h3>
 				<h4 className='text-primary'>{forecastData.humidity}%</h4>
 			</div>
