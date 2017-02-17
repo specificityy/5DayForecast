@@ -1,19 +1,17 @@
 import React from 'react';
 import test from 'tape';
-
 import { shallow } from 'enzyme';
 
 import DayForecast from '../src/components/DayForecast';
+import { forecastData } from './mocks';
 
-var data = {day:"Sat",icon:"10n",desc:"light rain",maxTemp:5,minTemp:4,humidity:95};
+test('<DayForecast /> renders correctly', t => {
+  let wrapper = shallow(<DayForecast forecastData={forecastData} />);
 
-test('<DayForecast /> renders correctly', function (t) {
-  var wrapper = shallow(<DayForecast forecastData={data} />);
-
-  t.equal(wrapper.find('div.panel-heading').text().trim(), data.day, 'day renders');
-  t.equal(wrapper.find('h4.desc').text().trim(), data.desc, 'desc renders');
-  t.equal(wrapper.find('span.text-info').text().trim(), data.maxTemp+'°', 'maxTemp renders');
-  t.equal(wrapper.find('span.text-muted').text().trim(), '/ '+data.minTemp+'°', 'minTemp renders');
-  t.equal(wrapper.find('h4.text-primary').text().trim(), data.humidity+'%', 'humidity renders');
+  t.equal(wrapper.find('div.panel-heading').text().trim(), forecastData.day, 'day renders');
+  t.equal(wrapper.find('h4.desc').text().trim(), forecastData.desc, 'desc renders');
+  t.equal(wrapper.find('span.text-info').text().trim(), forecastData.temp_max+'°', 'temp_max renders');
+  t.equal(wrapper.find('span.text-muted').text().trim(), '/ '+forecastData.temp_min+'°', 'temp_min renders');
+  t.equal(wrapper.find('h4.text-primary').text().trim(), forecastData.humidity+'%', 'humidity renders');
   t.end();
 });

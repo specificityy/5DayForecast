@@ -40905,6 +40905,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.reduceGroups = undefined;
 
 var _lodash = require('lodash');
 
@@ -40912,7 +40913,7 @@ var _lodash2 = _interopRequireDefault(_lodash);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function reduceGroups(group) {
+var reduceGroups = exports.reduceGroups = function reduceGroups(group) {
   var firstMin = group[0].main.temp_min;
 
   return _lodash2.default.reduce(group, function (acc, next, i) {
@@ -40922,7 +40923,7 @@ function reduceGroups(group) {
       humidity: acc.humidity + next.main.humidity
     };
   }, { temp_max: 0, temp_min: firstMin, humidity: 0 });
-}
+};
 
 function calc(actionData) {
   // Eight data elements are received for each day (forecast every 3 hours),
@@ -40933,6 +40934,9 @@ function calc(actionData) {
   var result = _lodash2.default.map(_lodash2.default.groupBy(actionData, function (item) {
     return item.dt_txt.split(' ')[0];
   }), function (group, id) {
+
+    console.log(JSON.stringify(group));
+
     var _reduceGroups = reduceGroups(group),
         temp_max = _reduceGroups.temp_max,
         temp_min = _reduceGroups.temp_min,

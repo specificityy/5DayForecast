@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-function reduceGroups(group) {
+export const reduceGroups = group => {
 	let firstMin = group[0].main.temp_min;
 
 	return _.reduce(group, (acc, next, i) => ({
@@ -8,7 +8,7 @@ function reduceGroups(group) {
 		temp_min: Math.min(acc.temp_min, next.main.temp_min),
 		humidity: acc.humidity + next.main.humidity
 		}), { temp_max: 0, temp_min: firstMin, humidity: 0 });
-}
+};
 
 function calc(actionData) {
   // Eight data elements are received for each day (forecast every 3 hours),
@@ -19,6 +19,7 @@ function calc(actionData) {
   let result = _.map(_.groupBy(actionData, item => item.dt_txt.split(' ')[0]),
     (group, id) => {
       
+      console.log(JSON.stringify(group));
       let { temp_max, temp_min, humidity } = reduceGroups(group);
 
       return {
