@@ -1,3 +1,6 @@
+
+[![Build Status](https://travis-ci.org/wilsonjs/5DayForecast.svg?branch=master)](https://travis-ci.org/wilsonjs/5DayForecast)
+
 # Five Day Forecast
 
 ## Simple React + Redux App using the [OpenWeatherMap API](http://openweathermap.org/forecast5)
