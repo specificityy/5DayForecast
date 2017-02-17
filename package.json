@@ -4,7 +4,8 @@
   "description": "Simple React-Redux app for displaying the 5 day weather forecast using the OpenWeatherMap API",
   "main": "index.js",
   "scripts": {
-    "test": "tape-watch test/.setup.js test/*.js | faucet",
+    "test": "tape test/.setup.js test/*.js | faucet",
+    "test-watch": "tape-watch test/.setup.js test/*.js | faucet",
     "build": "watchify src/app.js -o public/bundle.js -t [ babelify --presets [ react es2015 ] ]",
     "server": "live-server --port=1234 --entry-file=index.html"
   },
