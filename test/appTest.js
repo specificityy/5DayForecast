@@ -12,7 +12,7 @@ import DayForecastList from '../src/components/DayForecastList';
 import Toolbar from '../src/components/Toolbar';
 import DayForecast from '../src/components/DayForecast';
 
-import { setCity, fetchData } from '../src/actions';
+import { fetchData } from '../src/actions';
 
 import { store, forecastResultFiveDays } from './mocks';
 

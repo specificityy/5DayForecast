@@ -40699,7 +40699,7 @@ function run() {
 
 run();
 store.subscribe(run);
-store.dispatch((0, _actions.fetchData)('Edinburgh,GB'));
+store.dispatch((0, _actions.fetchData)('Edinburgh,UK'));
 
 },{"./actions":234,"./components/DayForecastList":237,"./components/Toolbar":238,"./reducers":240,"react":222,"react-dom":64,"react-redux":193,"redux":229,"redux-thunk":223}],236:[function(require,module,exports){
 'use strict';

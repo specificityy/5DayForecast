@@ -25,4 +25,4 @@ function run() {
 
 run();
 store.subscribe(run);
-store.dispatch(fetchData('Edinburgh,GB'));
+store.dispatch(fetchData('Edinburgh,UK'));
